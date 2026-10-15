@@ -1,0 +1,26 @@
+17:47:01.684 INFO  Loading C:\Program Files (x86)\Steam\steamapps\workshop\content\730\2389063714\narnia.bsp
+17:47:01.685 ERROR Error occurred decompiling 'C:\Program Files (x86)\Steam\steamapps\workshop\content\730\2389063714\narnia.bsp'
+info.ata4.bspsrc.decompiler.BspSourceException: Could not find bsp file.
+	at info.ata4.bspsrc.decompiler@1.4.8/info.ata4.bspsrc.decompiler.BspSource.decompile(BspSource.java:159)
+	at info.ata4.bspsrc.decompiler@1.4.8/info.ata4.bspsrc.decompiler.BspSource.decompile(BspSource.java:130)
+	at info.ata4.bspsrc.decompiler@1.4.8/info.ata4.bspsrc.decompiler.BspSource.lambda$run$0(BspSource.java:96)
+	at java.base/java.util.concurrent.ForkJoinTask$AdaptedInterruptibleRunnable.compute(ForkJoinTask.java:1718)
+	at java.base/java.util.concurrent.ForkJoinTask$InterruptibleTask.exec(ForkJoinTask.java:1650)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1394)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1970)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:187)
+Caused by: java.nio.file.NoSuchFileException: C:\Program Files (x86)\Steam\steamapps\workshop\content\730\2389063714\narnia.bsp
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:118)
+	at java.base/java.nio.channels.FileChannel.open(FileChannel.java:301)
+	at java.base/java.nio.channels.FileChannel.open(FileChannel.java:353)
+	at info.ata4.ioutils@0.2.0-SNAPSHOT/info.ata4.io.buffer.ByteBufferUtils.openReadOnly(ByteBufferUtils.java:180)
+	at info.ata4.ioutils@0.2.0-SNAPSHOT/info.ata4.io.buffer.ByteBufferUtils.openReadOnly(ByteBufferUtils.java:195)
+	at info.ata4.bspsrc.lib@1.4.8/info.ata4.bspsrc.lib.BspFile.createBuffer(BspFile.java:201)
+	at info.ata4.bspsrc.lib@1.4.8/info.ata4.bspsrc.lib.BspFile.load(BspFile.java:103)
+	at info.ata4.bspsrc.lib@1.4.8/info.ata4.bspsrc.lib.BspFile.load(BspFile.java:165)
+	at info.ata4.bspsrc.decompiler@1.4.8/info.ata4.bspsrc.decompiler.BspSource.decompile(BspSource.java:157)
+	... 8 more
